@@ -1,0 +1,20 @@
+{
+  "name": "new-project",
+  "version": "1.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Pramay",
+  "license": "ISC",
+  "keywords": [
+    "project",
+    "new",
+    "pramay"
+  ],
+  "description": "",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  },
+  "repository": "https://github.com/pramayn99/NodeSchool.git"
+}
