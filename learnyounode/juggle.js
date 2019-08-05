@@ -11,17 +11,20 @@ const printresults = () => {
 	})
 }
 
-urls.forEach((index,url) => {
+urls.forEach((url,index) => {
 	http.get(url,(res)=>{
 		res.setEncoding('utf-8')
 		res.pipe(bl((err,chunk) => {
 			if(err)
-				return console.error("ayay",err)
+				return console.error(err)
 			result[index]=chunk.toString()
 			count+=1;
+
 			if(count==3)
 				printresults()
+			
 		}))
+		
 			
 	}).on('error', (e) => {
 	  console.error(`Got error: ${e.message}`);
